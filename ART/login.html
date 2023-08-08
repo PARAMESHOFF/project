@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="login.css">
+    <script src="https://kit.fontawesome.com/796ca623d8.js" crossorigin="anonymous"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Teko&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+
+  
+  <div class="container">
+    <h2>login</h2>
+    <form action="">
+        <div class="form-group"> 
+
+        <input type="email" required>
+        <label for="">Email</label>
+
+       
+        </div>
+        <div class="form-group">
+
+         <input type="password" required>
+         <label for="">password</label>
+
+        
+        </div>
+
+        <p><input  id="btn" type="submit" value="login" onclick="rect()"><br>
+          <br>
+            <input type="checkbox">Remember me <a href="#">Forget Password</a> 
+            <br>
+            </p>
+           
+        <P>Don't have a account? <a href="account.html" >Creat Account</a></P>
+    </form>
+
+  </div>
+  <script>
+    function rect(){
+      var email = document.getElementById("email").value;
+      var password = document.getElementById("passsword").value;
+      if(email =="21beeee028@kahedu.edu.in" && password =="paramesh@123456"){
+      window.location.assign("main.html");
+      alert("Login successfully");}
+       else{
+        alert("Invalid Information ");
+        return;
+       }
+    }
+  </script>
+</body>
+</html>
